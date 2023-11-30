@@ -7,6 +7,7 @@ import java.util.List;
 
 
 @RestController // Indica que esta classe é um controlador REST.
+@CrossOrigin(origins = "*")
 @RequestMapping("/Viagens") // Define o mapeamento base para todas as rotas deste controlador.
 public class ClienteController{
     private final ClienteRepository clienteRepository;
